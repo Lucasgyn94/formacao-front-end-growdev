@@ -1,0 +1,63 @@
+body {
+    margin: 0px; 
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*background-color: azure;*/
+    background: url('../images/fundo.png') no-repeat left top;
+    background-size: cover;
+}
+header {
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+    padding: 1.5rem;
+
+}
+
+main {
+    padding: 0px 1.5rem 0px 1.5rem;
+}
+
+h1 {
+    text-align: center;
+}
+/*
+div:nth-of-type(1){
+    background-color: #F2F4F4;
+}
+
+div:nth-of-type(2) {
+    background-color: #FEF9E7;
+}
+*/
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 25px;
+    padding: 1.25rem;
+}
+
+#titulo-1 {
+    color: #273746;
+}
+
+.paragrafo {
+    color: #273746;
+    font-size: 1.25rem;
+}
+
+.table, td, th, tr {
+    width: 500px;
+    border: 1px solid #273746;
+}
+
+.background__white {
+    background-color: white;
+    border-radius: 1.25rem;
+    margin: 1.25rem;
+    padding: 1.25rem;
+
+}
