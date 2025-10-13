@@ -1,9 +1,5 @@
-
-
-@media (min-width: 780px) {
-    #app {
+#app {
     background: linear-gradient(120deg, #ffffff 45.9%, #4c79d3 46%) no-repeat fixed;
-    }
 }
 
 header {
