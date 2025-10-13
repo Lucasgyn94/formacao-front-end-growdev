@@ -22,10 +22,6 @@
     border-radius: 0.625rem;
 }
 
-.container-lg {
-    position: relative;
-}
-
 .btn.button-float {
     border-radius: 100%;
     height: 3.75rem;

@@ -92,11 +92,11 @@ function exibirTransacoes(tipo, elementoId) {
     for (let i = 0; i < limite; i++) {
         const t = transacoesFiltradas[i];
         container.innerHTML += `
-            <div class="row mb-4">
-                <div class="col-12">
+            <div class="row mb-4 shadow-sm">
+                <div class="col-12 ">
                     <div class="d-flex justify-content-between align-items-center">
                         <h3 class="fs-2 mb-0">R$ ${t.valor.toFixed(2)}</h3>
-                        <div class="btn-group" role="group">
+                        <div class="btn-group px-md-4 px-lg-5 gap-2" role="group">
                             <button class="btn btn-warning btn-sm edit-button" data-id="${t.id}"><i class="bi bi-pencil"></i></button>
                             <button class="btn btn-danger btn-sm delete-button" data-id="${t.id}"><i class="bi bi-trash"></i></button>
                         </div>
@@ -108,6 +108,7 @@ function exibirTransacoes(tipo, elementoId) {
                         </div>
                     </div>
                 </div>
+                
             </div>`;
     }
 }

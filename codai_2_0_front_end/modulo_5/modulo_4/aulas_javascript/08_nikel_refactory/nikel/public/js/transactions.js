@@ -67,6 +67,7 @@ if (checkLogado()) {
 }
 
 // --- FUNÇÃO DE UI ---
+// ...
 function renderizarTabela() {
     const tbody = document.getElementById("transactions-list");
     tbody.innerHTML = "";
@@ -74,13 +75,14 @@ function renderizarTabela() {
     if (dados.transactions.length) {
         dados.transactions.forEach(t => {
             const tipo = t.tipo === TIPO_ENTRADA ? "Entrada" : "Saída";
+
             tbody.innerHTML += `
-                <tr>
-                    <th scope="row">${t.data}</th>
-                    <td>R$ ${t.valor.toFixed(2)}</td>
-                    <td>${tipo}</td>
-                    <td>${t.descricao}</td>
-                    <td>
+                <tr class="shadow-sm">
+                    <td data-label="Data">${t.data}</td>
+                    <td data-label="Valor">R$ ${t.valor.toFixed(2)}</td>
+                    <td data-label="Tipo">${tipo}</td>
+                    <td data-label="Descrição">${t.descricao}</td>
+                    <td data-label="Ações">
                         <button class="btn btn-warning btn-sm edit-button" data-id="${t.id}" title="Editar">
                             <i class="bi bi-pencil"></i>
                         </button>
