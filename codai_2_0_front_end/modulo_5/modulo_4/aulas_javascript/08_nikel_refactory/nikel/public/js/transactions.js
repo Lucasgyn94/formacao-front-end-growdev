@@ -4,7 +4,7 @@
 
 const myModal = new bootstrap.Modal("#transaction-modal");
 
-// --- EVENT LISTENERS ---
+// --- EVENT LISTENERS (ouvidores de evento) ---
 document.getElementById("button-logout").addEventListener("click", logout);
 
 document.getElementById("transaction-form").addEventListener("submit", function(e) {
@@ -67,7 +67,6 @@ if (checkLogado()) {
 }
 
 // --- FUNÇÃO DE UI ---
-// ...
 function renderizarTabela() {
     const tbody = document.getElementById("transactions-list");
     tbody.innerHTML = "";
