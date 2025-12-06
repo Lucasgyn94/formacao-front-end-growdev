@@ -1,0 +1,20 @@
+1. Desenvolvimento Full Stack
+O que é?
+O desenvolvimento Full Stack refere-se ao trabalho em todas as camadas de um aplicativo, incluindo o lado do cliente (frontend) e o lado do servidor (backend). Um desenvolvedor full stack é capaz de trabalhar em todas as partes de um projeto web.
+
+Componentes do Desenvolvimento Full Stack:
+Frontend: A parte do aplicativo que o usuário interage diretamente. Inclui a interface do usuário e a experiência geral. Tecnologias comuns incluem:
+
+HTML, CSS e JavaScript
+Frameworks como React, Angular ou Vue.js
+Backend: A parte do aplicativo que lida com a lógica de negócios, manipulação de dados e integração com servidores e bases de dados. Tecnologias comuns incluem:
+
+Linguagens de programação como Node.js, Python, Ruby, Java ou PHP
+Bancos de dados SQL (MySQL, PostgreSQL) e NoSQL (MongoDB)
+DevOps: Muitas vezes, desenvolvedores full stack também têm conhecimentos na implementação e manutenção de infraestrutura, usando práticas de DevOps, que envolvem a automação de processos de integração e entrega.
+
+Habilidades Necessárias:
+Conhecimento de linguagens de programação e frameworks frontend e backend.
+Capacidade de trabalhar com APIs e serviços web.
+Habilidades em bancos de dados e manipulação de dados.
+Familiaridade com controle de versão (como Git) e práticas de colaboração.

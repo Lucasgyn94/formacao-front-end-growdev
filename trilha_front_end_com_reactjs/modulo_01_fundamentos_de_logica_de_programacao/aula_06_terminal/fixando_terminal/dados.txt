@@ -1,0 +1,22 @@
+Dados
+O que é?
+A área de Dados se concentra no armazenamento, análise e visualização de dados. Profissionais dessa área lidam com grandes volumes de dados, extraindo insights e apoiando decisões empresariais.
+
+Principais Componentes:
+Ciência de Dados: Envolve a utilização de técnicas estatísticas, aprendizado de máquina e análise preditiva para extrair informações significativas de conjuntos de dados. Ferramentas e linguagens comuns incluem:
+
+Python (com bibliotecas como Pandas, NumPy, Scikit-learn)
+R
+SQL para consulta de bancos de dados
+Análise de Dados: Foca na interpretação de conjuntos de dados para responder perguntas específicas e auxiliar na tomada de decisões. O analista de dados utiliza ferramentas de visualização (como Tableau ou Power BI) e relatórios.
+
+Engenharia de Dados: Envolve a construção e manutenção de sistemas de processamento de dados. Os engenheiros de dados projetam e implementam pipelines de dados, armazenamento e integração. Tecnologias comuns incluem:
+
+Apache Spark
+Hadoop
+Ferramentas ETL (Extract, Transform, Load)
+Habilidades Necessárias:
+Competência em estatística e matemática.
+Conhecimento em programação (principalmente Python e SQL).
+Familiaridade com ferramentas de visualização de dados.
+Capacidade de trabalhar com sistemas de bancos de dados e processamento de dados.

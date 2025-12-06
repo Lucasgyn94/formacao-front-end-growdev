@@ -1,0 +1,19 @@
+Desenvolvimento Mobile
+O que é?
+O desenvolvimento mobile se concentra na criação de aplicativos para dispositivos móveis, como smartphones e tablets. Isso pode incluir tanto aplicativos nativos quanto híbridos.
+
+Tipos de Aplicativos:
+Nativos: Desenvolvidos especificamente para uma plataforma (iOS ou Android) usando as linguagens e ferramentas específicas da plataforma.
+
+iOS: Usualmente desenvolvidos em Swift ou Objective-C, utilizando o Xcode como ambiente de desenvolvimento.
+Android: Desenvolvidos em Kotlin ou Java, com o Android Studio como IDE principal.
+Híbridos: Aplicativos que são desenvolvidos usando tecnologias web (HTML, CSS, JavaScript) e podem ser executados em diferentes plataformas, frequentemente utilizando frameworks como:
+
+React Native
+Flutter
+Ionic
+Habilidades Necessárias:
+Conhecimento das linguagens de programação e frameworks para desenvolvimento mobile.
+Compreensão das diretrizes de design e experiência do usuário para plataformas móveis.
+Habilidade em otimização de desempenho e uso eficiente dos recursos do dispositivo.
+Conhecimento de testes e publicação em lojas de aplicativos (App Store, Google Play).
