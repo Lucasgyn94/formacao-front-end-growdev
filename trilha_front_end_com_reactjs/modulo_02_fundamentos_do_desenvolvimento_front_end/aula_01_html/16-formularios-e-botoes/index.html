@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulários</title>
+    <style>
+        body{
+            margin: 0px;
+            padding-left: 10px;
+        }
+        section {
+            margin-bottom: 10px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        legend {
+            font-weight: bold;
+        }
+
+        .textarea {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Exemplo</h1>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <section class="input_nome">
+                <!-- Input Text-->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </section>
+            <section class="input_email">
+                <!--Input Email-->
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            </section>
+            <section class="input_number">
+                <!--Input Number-->
+                <label for="idade">Idade: </label>
+                <input type="number" id="idade" name="idade" step="1" min="1" max="100" required>
+            </section>
+            <section class="input_date">
+                <!--Input date-->
+                <label for="data_nascimento">Data de Nascimento</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" required>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Acesso</legend>
+            <section class="input_password">
+                <!--Input Password-->
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+            </section>
+            <section class="input_checkbox">
+                <!--Input Checkbox-->
+                <label for="aceitar">Aceito os termos: </label>
+                <input type="checkbox" id="aceitar" name="aceitar" value="sim" required>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Outras Informações</legend>
+            <section class="input_radio">
+                <!--Input Radio-->
+                <label>Gênero</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+            </section>
+            <section class="input_file">
+                <!--Input File-->
+                <label for="arquivo">Envie seu arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo" required>
+            </section>
+            <section class="input_color">
+                <label for="cor">Escolha uma cor favorita:</label>
+                <input type="color" id="cor" name="cor" value="#000000">
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentário e Seleção</legend>
+            <section class="textarea">
+                <label for="comentario">Comentário</label>
+                <textarea name="comentario" id="comentario" rows="4" cols="50" placeholder="Digite o seu comentário"></textarea>
+            </section>
+            <section class="select">
+                <label for="pais">País</label>
+                <select name="pais" id="pais" required>
+                    <option value="">Selecione...</option>
+                    <option value="brasil" selected>Brasil</option>
+                    <option value="eua">Estados Unidos</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="israel">Israel</option>
+                    <option value="ira">Irã</option>
+                </select>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Campo de Leitura e Desabilitado</legend>
+            <section class="input_readonly">
+                <label for="codigo">Código (somente leitura): </label>
+                <input type="text" id="codigo" name="codigo" value="12345" readonly>
+            </section>
+            <section class="input_disable">
+                <label for="desabilitado">Campo desabilitado: </label>
+                <input type="text" id="desabilitado" name="desabilitado" value="Desabilitado" disabled>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ações</legend>
+            <section class="submit">
+                <input type="submit" value="Enviar">
+            </section>
+            <section class="input_button">
+                <button type="button" onclick="alert('Botão clicado!')">Clique aqui</button>
+            </section>
+            <section class="input_hidden">
+                <!--Input Hidden-->
+                <input type="hidden" name="token" value="123456">
+            </section>
+        </fieldset>
+       
+    </form>
+    
+    
+</body>
+</html>
