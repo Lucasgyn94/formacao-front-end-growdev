@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Lucas Ferreira Da Silva</title>
+    <style>
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        /* Cabeçalho */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #311a5c;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header-text h1 {
+            margin: 0;
+            color: #311a5c;
+            font-size: 2.2rem;
+        }
+
+        .header-text p {
+            margin: 5px 0;
+            font-weight: bold;
+            color: #666;
+        }
+
+        .avatar-container {
+            width: 120px;
+            height: 120px;
+            background-color: transparent; 
+            border-radius: 50%;
+            overflow: hidden; 
+            border: 3px solid #311a5c; 
+            
+            
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            flex-shrink: 0;
+        }
+
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 50%; 
+        }
+
+        /* Seções */
+        section { 
+            margin-bottom: 25px; 
+        }
+
+        h2, h3 {
+            color: #311a5c;
+            border-left: 4px solid #311a5c;
+            padding-left: 10px;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+
+        .item { 
+            margin-bottom: 15px; 
+        }
+
+        .item h4 {
+            margin: 0;
+            color: #444;
+            font-size: 1.1rem;
+        }
+
+        .item-meta {
+            font-style: italic;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        /* Rodapé/Contato */
+        footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        .contatos {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contatos a {
+            text-decoration: none;
+            color: #311a5c;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .contatos a:hover { 
+            text-decoration: underline; 
+        }
+
+        ul { 
+            padding-left: 20px; 
+            margin-top: 5px; 
+        }
+        
+        li { 
+            margin-bottom: 5px; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header-texto">
+                <h1>Lucas Ferreira Da Silva</h1>
+                <p>Análise e Desenvolvimento de Sistemas</p>
+                <span>Goiânia, GO</span>
+            </div>
+            <div class="avatar-container">
+                <img src="./yo.png" alt="Foto de perfil">
+            </div>
+        </header>
+
+        <main>
+            <section id="sobre">
+                <h2>Resumo Profissional</h2>
+                <p>Experiência em automação de processos críticos e ETL. Especialista em otimização de fluxos operacionais com foco em resultados de larga escala, tendo atuado no monitoramento e manutenção de infraestrutura tecnológica.</p>
+            </section>
+
+            <section id="experiencia">
+                <h3>Experiências Profissionais</h3>
+                
+                <div class="item">
+                    <h4>CELG Distribuição Goiás</h4>
+                    <span class="item-meta">Estagiário de TI</span>
+                    <ul>
+                        <li><strong>Automação:</strong> Desenvolveu sistema para reset automático de mais de 7 mil equipamentos de rede.</li>
+                        <li><strong>Dados:</strong> Executou processos de extração, carregamento e tratamento (ETL) em bancos de dados corporativos.</li>
+                        <li><strong>Suporte:</strong> Gestão de tickets e monitoramento via Oper, G2MView e SageCom.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h4>Saneamento De Goiás (Saneago)</h4>
+                    <span class="item-meta">Estagiário Auxiliar Administrativo</span>
+                    <p>Apoio na organização de fluxos internos e suporte administrativo operacional.</p>
+                </div>
+            </section>
+
+            <section id="formacao">
+                <h3>Formação Acadêmica</h3>
+                <div class="item">
+                    <h4>Superior em Análise e Desenvolvimento de Sistemas</h4>
+                    <span class="item-meta">UNIGOIÁS | 2021 - 2024</span>
+                </div>
+                <div class="item">
+                    <h4>Ensino Médio</h4>
+                    <span class="item-meta">CPMG Ayrton Senna | 2009 - 2012</span>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h3>Contato</h3>
+            <div class="contatos">
+                <a href="mailto:needslucas944@gmail.com">📧 Enviar e-mail</a>
+                <a href="https://wa.me/5562994923612" target="_blank">📱 WhatsApp</a>
+                <a href="https://www.linkedin.com/in/lucas-ferreira-55053412a/" target="_blank">🔗 LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
