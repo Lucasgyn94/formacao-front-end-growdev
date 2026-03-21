@@ -1,76 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resumo sobre HTML Semântico</title>
+    <title>HTML SEMÂNTICO</title>
+    
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        ul {
-            list-style: disc inside;
-            margin-left: 0;
-            padding-left: 20px;
-        }
-        ol {
-            list-style: decimal inside;
-            margin-left: 0;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
+            margin: 0px;
+            padding: 0px;
         }
     </style>
 </head>
 <body>
+    <!--Cabeçalho da página-->
     <header>
-        <h1>HTML Semântico</h1>
+        <h1>Blog de Tecnologia</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!--Seção Principal-->
     <main>
-        <section id="introducao">
-            <h2>Introdução</h2>
-            <p>O HTML semântico refere-se ao uso de marcações que expressam o significado do conteúdo que elas delimitam. Isso melhora a acessibilidade, SEO e é considerado uma boa prática de codificação.</p>
-        </section>
+            <section id="artigos">
+                <article>
+                    <header>
+                        <h2>Os benefícios do HTML Semântico</h2>
+                        <p>Publicado em <time datetime="2026-03-21">21 de Março de 2026</time> por <a href="#contato"></a>Lucas Ferreira da Silva</p>
+                    </header>
+                    <p>HTML Semântico é a prática de usar tags de HTML em relação ao conteúdo que está sendo marcado</p>
+                    <p>Isso melhora a acessibilidade e SEO, facilitando a compreensão do conteúdo por leitores e mecanismos de busca</p>
+                </article>
 
-        <section id="principais-elementos">
-            <h2>Principais Elementos Semânticos</h2>
-            <ul>
-                <li><strong>header</strong>: Representa o cabeçalho de um documento ou seção.</li>
-                <li><strong>nav</strong>: Indica um conjunto de links de navegação.</li>
-                <li><strong>main</strong>: Delimita o conteúdo principal de um documento.</li>
-                <li><strong>section</strong>: Define uma seção temática no documento.</li>
-                <li><strong>article</strong>: Usado para conteúdo independente e auto-contido, como postagens de blog, artigos de revistas, notícias, ou qualquer item de conteúdo que poderia ser distribuído e reutilizado por si só.</li>
-                <li><strong>aside</strong>: Para conteúdo lateral que complementa o conteúdo principal.</li>
-                <li><strong>footer</strong>: Representa o rodapé de um documento ou seção.</li>
-            </ul>
-        </section>
-
-        <section id="beneficios">
-            <h2>Benefícios</h2>
-            <p>O uso de HTML semântico oferece diversas vantagens:</p>
-            <ol>
-                <li><strong>Acessibilidade:</strong> Facilita o uso de tecnologias assistivas.</li>
-                <li><strong>SEO:</strong> Motores de busca entendem melhor a hierarquia e o conteúdo.</li>
-                <li><strong>Facilidade de Manutenção:</strong> Código mais organizado e estruturado.</li>
-            </ol>
-        </section>
-
-        <section id="conclusao">
-            <h2>Conclusão</h2>
-            <p>Adotar o HTML semântico é essencial para desenvolver aplicações web modernas e acessíveis, garantindo que o conteúdo seja compreensível tanto para os usuários quanto para os motores de busca.</p>
+                <article>
+                    <header>
+                        <h2>Como CSS e JavaScript Interagem com HTML</h2>
+                         <p>Publicado em <time datetime="2026-03-21">21 de Março de 2026</time> por <a href="#contato"></a>Lucas Ferreira da Silva</p>
+                    </header>
+                    <p>O CSS é responsável pela apresentação visual do HTML, enquanto o JavaScript lida com interatividade e comportamentos dinâmicos.</p>
+                </article>
         </section>
     </main>
+    <!--Seção Sobre-->
+    <aside id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos desenvolvedores de software e apaixonados por tecnologia.</p>
+    </aside>
 
+    <!-- Rodapé com informações de contato-->
     <footer>
-        <p>© 2026 Curso de Front End da Growdev</p>
+        <section id="contato">
+            <h2>Fale Conosco</h2>
+            <address>
+                <p>Email: <a href="mailto:needslucas944@gmail.com">needslucas944@gmail.com</a></p>
+                <p>Telefone: <a href="tel:+5562994923612"></a>62 9 9492-3612</p>
+            </address>
+        </section>
+        <p>&copy; 2026 Growdev</p>
     </footer>
+    
 </body>
 </html>
