@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Tabelas</title>
+    <style>
+        /* table, th, td {
+            border: 1px solid black;
+        }
+
+        td {
+            height: 100px;
+            width: 250px;
+        } */
+    </style>
+</head>
+<body>
+    <!--Tabela Simples-->
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lucas</td>
+                <td>31</td>
+                <td>Desenvolvedor De Software</td>
+            </tr>
+            <tr>
+                <td>Thor</td>
+                <td>5</td>
+                <td>Vígia</td>
+            </tr>
+            <tr>
+                <td>Joana</td>
+                <td>60</td>
+                <td>Coordenadora</td>
+            </tr>
+        </tbody>
+        
+        <!-- <tfoot>
+            <p>Rodapé da tabela</p>
+        </tfoot> -->
+    </table>
+    <hr>
+    <br>
+    
+    <!--Tabela Com border = 1-->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lucas</td>
+                <td>31</td>
+                <td>Desenvolvedor De Software</td>
+            </tr>
+            <tr>
+                <td>Thor</td>
+                <td>5</td>
+                <td>Vígia</td>
+            </tr>
+            <tr>
+                <td>Joana</td>
+                <td>60</td>
+                <td>Coordenadora</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <!--Tabela Com width (largura) e height (altura) diferentes em celulas especificas-->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lucas</td>
+                <td>31</td>
+                <td>Desenvolvedor De Software</td>
+            </tr>
+            <tr>
+                <td style="width: 200px; height: 50px;">Thor</td>
+                <td>5</td>
+                <td>Vígia</td>
+            </tr>
+            <tr>
+                <td>Joana</td>
+                <td>60</td>
+                <td>Coordenadora</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    <br>
+    <!--Tabela Com colspan e rowspan-->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lucas</td>
+                <td>31</td>
+                <td>Desenvolvedor De Software</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Thor</td>
+                <td>5</td>
+                <td>Vígia</td>
+            </tr>
+            <tr>
+                <td colspan="3">Joana</td>
+                <!-- <td>60</td>
+                <td >Coordenadora</td> -->
+            </tr>
+        </tbody>
+        
+    </table>
+    
+</body>
+</html>
