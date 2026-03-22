@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução Do Exercício</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        main {
+            flex-grow: 1;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .lista_produtos h1 {
+            text-align: center;
+        }
+
+        .lista_produtos p {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#lista_produtos">Produtos</a></li>
+                <li><a href="#informacoes_adicionais">Informações Adicionais</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="lista_produtos" class="lista_produtos">
+            <h1>Lista de Produtos</h1>
+            <p>Produtos</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>    
+                <tbody>
+                    <tr>
+                        <td>Capinha 2</td>
+                        <td>2</td>
+                        <td>R$ 300,00</td>
+                    </tr>
+                    <tr>
+                        <td>Fone - 1</td>
+                        <td>1</td>
+                        <td>R$ 150,00</td>
+                    </tr>
+                    <tr>
+                        <td>Relógio</td>
+                        <td>1</td>
+                        <td>R$ 500</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td>R$ 950,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="informacoes_adicionais" class="informacoes_adicionais">
+            <h2>Informações Adicionais</h2>
+            <p>Todos nossos produtos tem garantia de 1 ano.</p>
+        </section>
+
+        <section class="mais_conteudos">
+            <p>Podemos adicionar mais seções conforme necessário</p>
+        </section>
+
+        <section id="ofertas" class="ofertas">
+            <h2>Ofertas</h2>
+            <p>Aqui você encontra nossas melhores ofertas</p>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 10px; background-color: #ddd;">
+        © 2026 Lucas-Techology. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
