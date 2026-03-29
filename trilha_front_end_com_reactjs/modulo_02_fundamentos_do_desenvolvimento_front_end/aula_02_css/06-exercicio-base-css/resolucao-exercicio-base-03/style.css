@@ -1,0 +1,53 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #d6e8f7;        
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+.titulo-secao {
+    font-size: 1.5rem; 
+    background-color: rgb(110, 153, 218);
+}
+
+#texto-copyright{
+    font-size: 0.875rem; 
+    background-color: rgb(228, 226, 226); 
+    text-align: center; 
+    padding: 0.875rem;
+}
+
+.formacao p {
+    text-transform: uppercase;
+}
+
+.experiencias-profissionais .descricao-cargo {
+    background-color: rgb(206, 240, 212);
+}
+
+.contato a {
+    text-decoration: none;
+}
+
+/*
+
+Utilizando CSS externo aplique as seguintes regras CSS:
+1. Aplique todas as estilizações solicitadas no exercício 2, agora
+utilizando CSS externo;
+2. Adicione o atributo class em cada section da página com os
+valores: “formacao”, “experiencias-profissionais” e “contato”
+3. Apenas aos parágrafos que são filhos diretos do elemento
+section que com a classe "formacao", aplique a transformação
+de texto para caixa alta (maiúsculas);
+4. Adicione o atributo class com o valor "descricao-cargo" apenas
+nos elementos de parágrafo da seção "experiencias-profissionais" que contém a descrição do cargo;
+5. Modifique a cor do texto dos elementos que possuírem a classe
+"descricao-cargo" e que sejam filhos diretos de um elemento
+com a classe "experiencias-profissionais";
+6. Remova o sublinhado dos textos dos links (<a>) contidos na
+seção de contato. Assegure que os estilos só serão aplicados
+para os links que estiverem dentro do elemento de classe
+"contato";
+*/
