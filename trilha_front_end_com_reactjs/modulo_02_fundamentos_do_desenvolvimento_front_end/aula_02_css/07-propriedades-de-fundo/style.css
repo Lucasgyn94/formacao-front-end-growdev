@@ -1,0 +1,22 @@
+body {
+    /*
+    background-image: url(./background1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    */
+    background: aquamarine url("./background1.jpg") center/cover no-repeat scroll
+    /*background: url("./background2.png") no-repeat center;*/
+}
+
+/*background: [bg-color] [bg-image] [position[/size]] [repeat] [attachment] [origin] [clip];
+*/
+
+h1 {
+    background-color: rgb(245, 206, 255);
+}
+
+p {
+    background-color: rgb(163, 163, 255);
+}
