@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div {
+    height: 150px;
+    width: 200px;
+    background-color: rgb(230, 167, 167);
+    text-align: center;
+    color: white;
+    /* 
+        A propriedade margin é usada para determinar o espaço que o elemento terá entre os elementos adjacentes.
+        
+        margin-top: 20px;
+        margin-right: 30px;
+        margin-bottom: 10px; 
+        margin-left: 5px;
+
+        margin: 20px 5px; top/bottom  left/right
+        margin: 20px;
+    */
+    /*margin: 20px 30px 10px 5px;*/
+    margin: 1.25rem 1.875rem 0.625rem 1.5rem;
+    
+    /* 
+        A propriedade padding faz com que o conteúdo do elemento se distancie da borda.
+
+        padding-top: 20px;
+        padding-right: 30px;
+        padding-bottom: 10px; 
+        padding-left: 5px;
+
+        padding: 20px 5px; top/bottom  left/right
+        padding: 20px;
+    */
+    padding: 1.25rem 1.875rem 0.625rem 0.3125rem;
+
+       /*
+        A propriedade border é responsável por criar uma borda no componente. 
+
+        border-width: 5px;
+        border-style: solid;
+        border-color: #000000;
+        */
+      border: 5px solid #000000;
+    /* 
+        A propriedade outline permite adicionar um contorno no elemento, assim como é feito pela propriedade border. 
+        A grande diferença está no fato de que o outline não faz parte do cálculo de tamanho do box model.
+    */
+    outline: green solid 6px;
+    box-shadow: 20px 20px 20px black;
+}
