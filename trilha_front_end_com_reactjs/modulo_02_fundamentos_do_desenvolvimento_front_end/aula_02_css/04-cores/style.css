@@ -1,0 +1,13 @@
+/*Cores podem ser definidas pelo nome, hexadecimal e RGB*/
+
+body {
+    background-color: red;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+p {
+    color: rgb(128, 44, 44);
+}
