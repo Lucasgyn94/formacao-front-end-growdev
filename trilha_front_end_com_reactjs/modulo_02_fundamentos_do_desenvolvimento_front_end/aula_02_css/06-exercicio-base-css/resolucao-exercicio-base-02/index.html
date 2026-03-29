@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Base CSS</title>
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+
+        .titulo-secao {
+            font-size: 1.5rem; 
+            background-color: rgb(110, 153, 218);
+        }
+
+        #texto-copyright{
+            font-size: 0.875rem; 
+            background-color: rgb(228, 226, 226); 
+            text-align: center; 
+            padding: 0.875rem;
+        }
+    </style>
+</head>
+<body style="background-color: #fafafa;;">
+    <header>
+        <h1 style="text-transform: uppercase;">Lucas Ferreira da Silva</h1>
+        <img src="./img/avatar.jpeg" width="200px">
+    </header>
+
+    <main>
+        <section>
+            <h2 class="titulo-secao" style="">Formação</h2>
+            
+            <p> Instituição X - 2022-2026 - Curso X </p>
+            
+            <hr>
+            
+            <p> Instituição Y - 2022-2026 - Curso Y </p>
+            
+            <hr>
+        </section>
+
+        <section>
+            <h3 class="titulo-secao"> Experiências Profisisonais</h3>
+            
+            <p>Empresa X - Desenvolvedora</p>
+            <p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Debitis dolor est ad nobis vero illo voluptatibus id inventore. <br>
+                Natus eos, alias voluptate qui perspiciatis magni placeat nostrum asperiores eum eaque! 
+            </p>
+            
+            <p>Empresa Y - Desenvolvedora</p>
+            <p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Debitis dolor est ad nobis vero illo voluptatibus id inventore. <br>
+                Natus eos, alias voluptate qui perspiciatis magni placeat nostrum asperiores eum eaque! 
+            </p>
+            <hr>
+        </section>
+
+        <section>
+            <h4 class="titulo-secao">Contato</h4>
+            <ul>
+                <li>
+                    <a href="mailto:exemplo@gmail.com">Enviar e-mail</a>
+                </li>
+                <li>
+                    <a href="tel:+5551999998877">Ligar para mim</a>
+                </li>
+                <li>
+                    <a href="sms:+5551999998877">Enviar SMS</a>
+                </li>
+                <li>
+                    <a href="https://br.linkedin.com/">Linkedin</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p id="texto-copyright">&copy; Copyright 2026</p>
+    </footer>
+</body>
+</html>
