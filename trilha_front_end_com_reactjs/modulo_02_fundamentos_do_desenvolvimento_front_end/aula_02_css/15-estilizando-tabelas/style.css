@@ -1,0 +1,30 @@
+/* Estilização básica da tabela */
+table.custom-table {
+    width: 100%; /*Faz a tabela ocupar toda largura disponível*/
+    border-collapse: collapse; /*Colapsa as bordas da tabela*/
+    border-spacing: 0; /*Não deixa espaço entre as células*/
+    border: 1px solid #ccc; /*Define uma borda para a tabela*/
+}
+
+/* Estilização para as células (th e td) */
+th, td {
+    border: 1px solid #ccc; /*Define bordas para cada célula*/
+    padding: 0.625rem; /*Espaçamento interno das células*/
+    text-align: left; /*Alinha o texto à esquerda*/
+}
+
+/* Estilização para o cabeçalho da tabela */
+th {
+    background-color: #54b2e9; /*Fundo cinza claro para o cabeçalho*/
+    font-weight: bold; /*Negrito para o cabeçalho*/
+}
+/* Linhas alternadas */
+tr:nth-child(even) {
+    background-color: #a4bed3; /* Fundo alternado para linhas pares */
+}
+
+/* Espaçamento extra entre as células */
+table.custom-spacing {
+    border-collapse: separate;/* Bordas das células separadas */
+    border-spacing: 0.9375rem; /* Espaçamento entre células */
+}
