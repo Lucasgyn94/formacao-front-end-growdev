@@ -1,0 +1,54 @@
+/*Customização Básica*/
+.link {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/*Estilos de Botão*/
+.btn-link {
+    background-color: red;
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    background-color: darkred;
+    cursor: pointer;
+}
+
+
+/* Estilos para links não visitados */
+.link-default:link {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Estilos para links já visitados */
+.link-default:visited {
+    color: purple;
+}
+
+/* Estilos para links quando o mouse passa por cima */
+.link-default:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Estilos para links no momento em que são clicados */
+.link-default:active {
+    color: green;
+    background-color: black;
+}
+
+/* Estilos para links quando estão focados (via teclado, por exemplo) */
+.link-default:focus {
+    outline: 2px solid orange;
+}
+
