@@ -1,85 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     margin: 0px;
     padding: 0px;
 }
-main {
-    margin-bottom: 3rem;
-    padding: 1rem;    
-}
 
 header {
-    background-color: #3357c4;
-    padding: 1.5rem;
-    font-weight: 900;
+    background-color: #3c63b5;
+    padding: 0.5rem;
 }
 
-header > p{
+header > p {
     display: inline-block;
-    color: white;
-    font-size: 1.25rem;
-    padding-left: 2rem ;
-
+    margin: 1.5rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
 }
 
-.introducao {
+section {
     text-align: center;
-    margin-bottom: 1em;
-       
+    padding: 3rem;
 }
 
-
-.introducao, .descricao > img {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    margin-bottom: 6rem;
-}
-
-.introducao h2 {
-    font-size: 4rem;
-}
-
-.introducao h2, .introducao p {
-    margin-bottom: 1.5rem;
-}
-
-h2, .introducao-btn {
-    font-weight: 800;
-}
-
-.introducao-btn {
-    padding: 1.5em 4em;
-    border-radius: 50px;
-    background-color: #3357c4;
-    color: white;
-    font-size: 1rem;
-}
-
-.descricao {
-    max-width: 100%;
+img {
+    max-width: 600px;
     width: 100%;
-    text-align: center;
 }
 
-.descricao h2 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+h2 {
+    font-size: 3rem;
+    margin: 0.75rem 0px;
 }
 
-.descricao > p {
+.btn-saiba-mais {
+    padding: 1.125em 3em;
+    border-radius: 48px;
+    border: 1px solid #3c63b5;
+    background-color: #3c63b5;
+    color: #ffffff;
+    margin-top: 1.5rem;
     font-size: 1rem;
-    
+}
+
+hr {
+    border: 1px solid #c8c5c5;
 }
 
 footer {
-    border-top: 2px solid rgb(241, 238, 238);
-    padding: 1.5rem;
-    text-align: center;
+    padding: 2.25rem;
 }
 
-footer p {
+footer > p {
     color: grey;
+    text-align: center;
+    font-size: 0.875rem;
 }
