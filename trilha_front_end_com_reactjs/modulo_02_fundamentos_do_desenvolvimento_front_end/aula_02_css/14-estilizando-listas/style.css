@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+/* Estilização para listas não ordenadas (ul) */
+ul.custom-ul {
+    list-style: square; /*Define o tipo de marcador*/
+    list-style-position: inside; /*O marcado aparece dentro da lista*/
+    margin: 1.25rem; /*Margem externa da lista*/
+    padding: 0.625rem; /*Espaçamento interno da lista*/
+    background-color: #f9f9f9; /*Fundo claro para destacar a lista*/
+    border: 1px solid #ccc; /*Borda ao redor da lista*/
+}
+
+/* Estilização para listas ordenadas (ol) */
+ol.custom-ol {
+    list-style-type: decimal; /*Númerado com decimais*/
+    list-style-position: outside; /*O número aparece fora da lista*/
+    margin: 1.25rem; /*Margem externa da lista*/
+    padding: 0.625rem 1.25rem; /*Espaçamento interno da lista*/
+    background-color: #e9f7ef; /*Fundo esverdeado*/
+    border: 1px solid #28a745; /*Borda verde*/
+}
+
+/* Estilização para listas de descrição (dl) */
+dl.custom-dl {
+    margin: 1.25rem;
+    padding: 0.625rem;
+    background-color: #f1f8ff;
+    border-left: 4px solid #007bff; /*Borda lateral esquerda*/
+}
+
+/* Estilização para os termos (dt) das listas de descrição */
+dl.custom-dl dt {
+    font-weight: bold;
+    margin-bottom: 0.3125rem;
+}
+
+/* Estilização para as descrições (dd) das listas de descrição */
+dl.custom-dl dd {
+    margin-left: 1.25rem;
+    margin-bottom: 0.625rem;
+}
