@@ -5,7 +5,7 @@
 }
 /* Estilização para listas não ordenadas (ul) */
 ul.custom-ul {
-    list-style: square; /*Define o tipo de marcador*/
+    list-style-type: square; /*Define o tipo de marcador*/
     list-style-position: inside; /*O marcado aparece dentro da lista*/
     margin: 1.25rem; /*Margem externa da lista*/
     padding: 0.625rem; /*Espaçamento interno da lista*/
