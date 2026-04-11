@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header {
+    background-color: #3c63b5;
+    padding: 0.5rem;
+}
+
+nav.menu li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 1.5rem;
+}
+
+nav.menu li > a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav.menu li > a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+}
+
+section {
+    text-align: center;
+    padding: 3rem;
+    border-bottom: 1px solid #c0bdbd;
+}
+
+button.btn-saiba-mais {
+    padding: 1.125em 3em;
+    border-radius: 3rem;
+    border: 1px solid #3b63b6;
+    background-color: #3b63b6;
+    font-size: 1rem;
+    color: white;
+    margin: 1.5rem 0;
+    transition: all 0.3s; /*Deixa a mudança mais suave*/
+}
+
+.btn-saiba-mais:hover {
+    cursor: pointer;
+    font-weight: 900;
+    background-color: #2a4a8a;
+}
+
+table {
+    width: 70%;
+    margin: 0.75rem auto;
+}
+
+table, td, th {
+    border: 1px solid #c0bdbd;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.75rem;
+}
+
+section#planos {
+    padding: 3rem 0;
+}
+
+footer {
+    padding: 1.5rem ;
+}
+
+footer > p {
+    text-align: center;
+    font-size: 0.875rem;
+    color: grey;
+}
+
+.btn-whatsapp {
+    height: 50px; 
+    width: 50px;
+    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    
+    background-color: #fff;
+    border-radius: 50%;  
+    
+    padding: 0.625rem;          
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s; 
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+}
+
+.btn-whatsapp svg {
+    width: 100%; 
+    height: 100%;
+}
+
+
+

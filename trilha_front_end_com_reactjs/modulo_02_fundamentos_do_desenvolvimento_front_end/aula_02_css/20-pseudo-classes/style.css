@@ -1,0 +1,35 @@
+/* Estilo para o input quando está desabilitado */
+input:disabled {
+    background-color: #f0f0f0; /* Fundo cinza */
+    color: #aaa; /* Texto cinza */
+    cursor: not-allowed; /* Cursor indicando que não pode ser clicado */
+}
+
+/* Estilo para checkboxes e radio buttons quando estão selecionados */
+input:checked {
+    accent-color: red; /* Cor do botão selecionado */
+}
+
+/* Estilo para inputs com foco */
+input:focus {
+    border: 2px solid green; /* Borda azul ao focar */
+    outline: none; /* Remove a borda padrão */
+}
+
+/* Estilo para links visitados */
+a:visited {
+    color: purple; /* Cor roxa para links já visitados */
+}
+
+/* Estilo para o primeiro filho de um container */
+.container p:first-child{
+    color: green; /* Cor verde */
+    font-weight: bold; /* Negrito para o primeiro parágrafo */
+    
+}
+
+/* Estilo para o terceiro filho de um container */
+.container p:nth-child(3) {
+    color: orangered;  /* Cor laranja para o terceiro parágrafo */
+    font-style: italic; /* Itálico para o terceiro parágrafo */
+}

@@ -1,0 +1,43 @@
+/* Estilo ::before para inserir conteúdo antes de um elemento */
+.content::before {
+    content: "📌 "; /* Insere um ícone antes do parágrafo */
+    font-size: 1.25em;
+    color: red;
+}
+
+ /* Estilo ::after para inserir conteúdo depois de um elemento */
+.content::after{
+    content: " ✨"; /* Insere um ícone depois do parágrafo */
+    font-size: 1.25em;
+    color: gold;
+}
+
+/* Estilo ::first-letter para estilizar a primeira letra */
+.highlight-first-letter::first-letter {
+    font-size: 2em; /* Aumenta o tamanho da primeira letra */
+    font-weight: bold;
+    color: darkblue;
+    float: left; /* Flutua a primeira letra para criar um efeito de capitular */
+    margin-right: 5px;
+}
+
+/* Estilo ::first-line para estilizar a primeira linha */
+.highlight-first-line::first-line {
+    font-weight: bold;
+    color: darkgreen;
+    font-style: italic;
+}
+
+/* Estilo ::selection para estilizar o texto selecionado */
+::selection {
+    background-color: yellow; /* Altera a cor de fundo da seleção */
+    color: black; /* Altera a cor do texto selecionado */
+}
+
+/* Estilo ::marker para estilizar os marcadores das listas */
+li::marker {
+    color: blue;
+    font-size: 1.5em;
+    content: "👉 ";
+}
+
