@@ -1,0 +1,56 @@
+/* Exemplo display: block */
+.block-element {
+    background-color: lightblue;
+    display: block;
+    width: 300px;
+    height: 300px;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+/* Exemplo display: inline */
+.inline-element {
+    background-color: lightcoral;
+    display: inline;
+    padding: 0.3125rem;
+}
+
+/* Exemplo display: inline-block */
+.inline-block-element {
+    background-color: lightgreen;
+    display: inline-block;
+    width: 150px;
+    padding: 0.625rem;
+    margin-right: 0.625rem;
+    text-align: center;
+}
+
+/* Exemplo display: flex */
+.flex-container {
+    background-color: lightyellow;
+    display: flex;
+    padding: 0.625rem;
+    
+}
+
+.flex-item {
+    background-color: lightcoral;
+    padding: 1.25rem;
+    margin-right: 0.625rem;
+    text-align: center;
+}
+
+/* Exemplo display: grid */
+.grid-container {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.625rem;
+    padding: 0.625rem;
+}
+
+.grid-item {
+    background-color: lightblue;
+    padding: 1.25rem;
+    text-align: center;
+}

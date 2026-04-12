@@ -1,0 +1,17 @@
+/*grid-container*/
+.grid-container{
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /*3 colunas: 1fr, 2fr, 1fr*/
+    grid-template-rows: auto; /*O número de linhas será determinado pelo conteúdo*/
+    gap: 0.625rem; /*Espaçamento de 10px entre os itens*/
+    padding: 1.25rem; 
+}
+
+.grid-item {
+    background-color: lightcoral;
+    color: white;
+    padding: 1.25rem;
+    font-size: 1.25em;
+    text-align: center;
+}

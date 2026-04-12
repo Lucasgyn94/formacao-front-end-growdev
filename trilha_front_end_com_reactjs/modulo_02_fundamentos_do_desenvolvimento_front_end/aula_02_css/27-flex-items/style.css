@@ -1,0 +1,32 @@
+/* Flex container */
+.flex-container {
+    background-color: lightgray;
+    display: flex;
+    padding: 1.25rem;
+    height: 200px; /* Altura fixa para visualizar o alinhamento */
+    gap: 0.625rem; /* Espaçamento entre os itens */
+
+}
+
+ /* Itens flexíveis com diferentes propriedades */
+ .flex-item {
+    background-color: lightcoral;
+    color: white;
+    padding: 1.25rem;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.flex-item-1 {
+    flex-grow: 1; /* O item 1 vai crescer e ocupar o espaço disponível */
+    
+}
+
+.flex-item-2 {
+    flex-grow: 2; /* O item 2 vai crescer duas vezes mais que o item 1 */
+    
+}
+.flex-item-3 {
+    flex-shrink: 0; /* O item 3 não vai encolher mesmo se o espaço for limitado */
+    width: 200px;  /* Largura fixa para o item 3 */
+}

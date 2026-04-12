@@ -1,0 +1,39 @@
+/* Flex container básico */
+.flex-container {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between; /* Distribui os itens com espaço igual entre eles */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 1.25rem;
+    height: 200px; /* Altura fixa do container */
+}
+
+.flex-item {
+    background-color: lightcoral;
+    padding: 1.25rem;
+    margin: 0.625rem;
+    color: white;
+    font-size: 1.25em;
+    text-align: center;
+    flex-grow: 1; /* Faz os itens crescerem igualmente */
+}
+
+/* Flex container vertical */
+.flex-column-container {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column; /* Direção vertical */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    height: 300px;
+    padding: 1.25rem;
+
+}
+
+.flex-item-vertical {
+    background-color: darkcyan;
+    color: white;
+    padding: 1.25rem;
+    margin: 0.625rem;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+.block-element {
+    background-color: lightblue;
+    width: 300px;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+.inline-element {
+    background-color: lightcoral;
+    padding: 0.3125rem;
+}
