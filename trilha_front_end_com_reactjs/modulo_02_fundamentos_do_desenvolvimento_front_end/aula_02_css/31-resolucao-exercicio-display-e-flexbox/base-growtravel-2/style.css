@@ -6,21 +6,23 @@
     padding: 0px;
 }
 
-
 header {
-    background-color: #3c63b5;
-    padding: 0.5rem;
+    background-color: #3c63b6;
+    padding: 1.5rem;
+}
+
+nav.menu > ul {
+    display: flex;
+    gap: 3rem;
 }
 
 nav.menu li {
-    display: inline-block;
-    list-style-type: none;
-    margin: 1.5rem;
+    list-style: none;
 }
 
 nav.menu li > a {
     text-decoration: none;
-    color: #fff;
+    color: #cccccc;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -31,36 +33,43 @@ nav.menu li > a:hover {
 }
 
 img {
-    width: 100%;
-    max-width: 600px;
+    width: 400px;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 3em;
     margin: 0.5rem 0;
 }
 
 section {
+    text-align: center;
     padding: 3rem;
     border-bottom: 1px solid #c0bdbd;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#pagina-inicial {
+    flex-direction: row-reverse;
+}
+
+section#quem-somos {
+    gap: 3rem;
 }
 
 section#planos {
-    text-align: center;
-    padding: 3rem 0;
+    flex-direction: column;
 }
 
-.secao-duas-colunas {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
+section#quem-somos > div {
     text-align: left;
+    width: 60%;
 }
 
-.secao-duas-colunas .conteudo-texto {
-    max-width: 500px;
-    text-align: left; 
+section#quem-somos > img {
+    width: 40%;
 }
 
 button.btn-saiba-mais {
@@ -76,13 +85,12 @@ button.btn-saiba-mais {
 
 .btn-saiba-mais:hover {
     cursor: pointer;
-    font-weight: 900;
+    font-weight: bold;
     background-color: #2a4a8a;
 }
 
 table {
     width: 70%;
-    margin: 0.75rem auto;
 }
 
 table, td, th {
@@ -99,7 +107,7 @@ section#planos {
 }
 
 footer {
-    padding: 1.5rem ;
+    padding: 1.5rem;
 }
 
 footer > p {
@@ -108,6 +116,22 @@ footer > p {
     color: grey;
 }
 
+a.btn-whatsapp{
+    position: fixed;
+    right: 1.5625rem; /*25px*/
+    bottom: 1.5625rem; /*25px*/
 
+    z-index: 1000;
+    border-radius: 50%;  
+    padding: 0.625rem;          
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s; 
+}
 
+a.btn-whatsapp > img {
+    width: 50px;
+}
 
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+}
