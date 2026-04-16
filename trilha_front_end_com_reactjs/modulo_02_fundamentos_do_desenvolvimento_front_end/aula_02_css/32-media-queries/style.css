@@ -1,0 +1,42 @@
+/* 
+    @media [media-type] ([media-feature]) [operador] ([media-feature]) ... {
+        Estilos a serem aplicados
+    } 
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 1.25rem;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: darkblue;
+}
+
+/* Estilo padrão */
+.box {
+    background-color: lightcoral;
+    padding: 1.25rem;
+    text-align: center;
+    margin: 0.625rem 0;
+    font-size: 1.25em;
+}
+
+/* Media Query: ajusta o layout para telas menores */
+@media screen and (max-width: 768px) {
+    .box {
+        background-color: lightblue; /* Altera a cor de fundo */
+        font-size: 1.125em; /* Reduz o tamanho da fonte */
+    }
+}
+
+/* Media Query: ajusta ainda mais para dispositivos muito pequenos */
+@media screen and (max-width: 480px) {
+    /* Breakpoint em 480px */
+    .box {
+        background-color: lightgreen; /* Altera a cor de fundo */
+        font-size: 1em; /* Reduz ainda mais o tamanho da fonte */
+        padding: 0.625rem; /* Menor padding */
+    }
+}

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* =========================================
+   ESTILOS BASE (DESKTOP E GERAIS)
+   ========================================= */
+header {
+    background-color: #3c63b6;
+    padding: 1.5rem;
+}
+
+nav.menu > ul {
+    display: flex;
+    gap: 3rem;
+}
+
+nav.menu li {
+    list-style: none;
+}
+
+nav.menu li > a {
+    text-decoration: none;
+    color: #cccccc;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav.menu li > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Imagens flexíveis para não quebrarem o layout */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 3em;
+    margin: 0.5rem 0;
+}
+
+section {
+    text-align: center;
+    padding: 3rem;
+    border-bottom: 1px solid #c0bdbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mesmos gaps e direções opostas */
+section#pagina-inicial {
+    flex-direction: row-reverse;
+    gap: 3rem;
+}
+
+section#quem-somos {
+    gap: 3rem;
+}
+
+section#planos {
+    flex-direction: column;
+    padding: 3rem 0;
+}
+
+/* Mesmas larguras e alinhamentos para os textos e imagens */
+section#pagina-inicial > div,
+section#quem-somos > div {
+    text-align: left;
+    width: 50%;
+}
+
+section#pagina-inicial > img,
+section#quem-somos > img {
+    width: 40%;
+}
+
+/* =========================================
+   BOTÕES E TABELA
+   ========================================= */
+button.btn-saiba-mais {
+    padding: 1.125em 3em;
+    border-radius: 3rem;
+    border: 1px solid #3b63b6;
+    background-color: #3b63b6;
+    font-size: 1rem;
+    color: white;
+    margin: 1.5rem 0;
+    transition: all 0.3s;
+}
+
+.btn-saiba-mais:hover {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #2a4a8a;
+}
+
+table {
+    width: 70%;
+}
+
+table, td, th {
+    border: 1px solid #c0bdbd;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.75rem;
+}
+
+footer {
+    padding: 1.5rem;
+}
+
+footer > p {
+    text-align: center;
+    font-size: 0.875em;
+    color: grey;
+}
+
+a.btn-whatsapp{
+    position: fixed;
+    right: 1.5625rem; 
+    bottom: 1.5625rem; 
+    z-index: 1000;
+    border-radius: 50%;  
+    padding: 0.625rem;          
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s; 
+}
+
+a.btn-whatsapp > img {
+    width: 50px;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+}
+
+/* =========================================
+   MEDIA QUERIES - RESPONSIVIDADE
+   ========================================= */
+
+/* 2. Tablets e Smartphones Maiores (Até 768px) */
+@media screen and (max-width: 768px) {
+    nav.menu > ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    section#pagina-inicial,
+    section#quem-somos {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    section#pagina-inicial > div,
+    section#quem-somos > div,
+    section#pagina-inicial > img,
+    section#quem-somos > img {
+        width: 100%;
+        text-align: center;
+    }
+
+    section#quem-somos > div {
+        padding: 0 1.5rem; /* Evita que o texto cole na borda da tela */
+    }
+
+    section#planos {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        width: max-content;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* 1. Smartphones Menores (Até 480px) */
+@media screen and (max-width: 480px) {
+    nav.menu > ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    section {
+        padding: 1.5rem 1rem;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    button.btn-saiba-mais {
+        width: 100%;
+    }
+}
