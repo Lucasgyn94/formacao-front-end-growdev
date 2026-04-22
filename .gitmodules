@@ -1,3 +1,6 @@
 [submodule "codai_2_0_front_end/modulo_6/modulo_5/aulas_git_e_paas/04_entrega_do_projeto_nikel/nikel"]
 	path = codai_2_0_front_end/modulo_6/modulo_5/aulas_git_e_paas/04_entrega_do_projeto_nikel/nikel
 	url = https://github.com/Lucasgyn94/js-nikel.git
+[submodule "trilha_front_end_com_reactjs/modulo_02_fundamentos_do_desenvolvimento_front_end/aula_03_deploy/02-resolucao-exercicio-deploy/growtravel-gh-pages"]
+	path = trilha_front_end_com_reactjs/modulo_02_fundamentos_do_desenvolvimento_front_end/aula_03_deploy/02-resolucao-exercicio-deploy/growtravel-gh-pages
+	url = https://github.com/Lucasgyn94/growtravel-gh-pages.git
