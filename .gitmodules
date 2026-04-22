@@ -4,3 +4,6 @@
 [submodule "trilha_front_end_com_reactjs/modulo_02_fundamentos_do_desenvolvimento_front_end/aula_03_deploy/02-resolucao-exercicio-deploy/growtravel-gh-pages"]
 	path = trilha_front_end_com_reactjs/modulo_02_fundamentos_do_desenvolvimento_front_end/aula_03_deploy/02-resolucao-exercicio-deploy/growtravel-gh-pages
 	url = https://github.com/Lucasgyn94/growtravel-gh-pages.git
+[submodule "trilha_front_end_com_reactjs/modulo_02_fundamentos_do_desenvolvimento_front_end/aula_03_deploy/02-resolucao-exercicio-deploy/growtravel-vercel"]
+	path = trilha_front_end_com_reactjs/modulo_02_fundamentos_do_desenvolvimento_front_end/aula_03_deploy/02-resolucao-exercicio-deploy/growtravel-vercel
+	url = https://github.com/Lucasgyn94/growtravel-vercel.git
