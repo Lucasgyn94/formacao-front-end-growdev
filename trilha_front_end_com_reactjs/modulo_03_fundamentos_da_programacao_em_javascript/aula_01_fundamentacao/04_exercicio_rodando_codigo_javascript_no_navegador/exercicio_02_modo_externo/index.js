@@ -1,0 +1,1 @@
+console.log("Olá, meu nome é Lucas! Este é meu primeiro código JS");
