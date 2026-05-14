@@ -18,7 +18,7 @@ Questão 2. Um cliente deseja realizar uma compra de R$ 300,00, mas seu limite d
 */
 const valorCompra = 400.00;
 const limiteCredito = 500.00;
-const compraDentroDoLimiteDeCredito = valorCompra <= limiteCredito ?
+const compraDentroLimite = valorCompra <= limiteCredito ?
                                         `Valor de Compra: ${valorCompra}\nLimite de Crédito ${limiteCredito}\nStatus Compra: Aprovada com sucesso!` :
                                         `Valor de Compra: ${valorCompra}\nLimite de Crédito ${limiteCredito}\nStatus Compra: Saldo Insuficiente!`;
-console.log(compraDentroDoLimiteDeCredito);
+console.log(compraDentroLimite);
