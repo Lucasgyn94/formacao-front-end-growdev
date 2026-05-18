@@ -12,5 +12,5 @@ const questao1 = () => {
 
 const idade = 18;
 const possuiCNH = true;
-const podeDirigir = (idade >= 18 && possuiCNH) ? "Você pode dirigir" : "Você não pode dirigir!";
+const podeDirigir = (idade >= 18 && possuiCNH) ? "Você está apto dirigir" : "Você não está apto para dirigir!";
 console.log(podeDirigir);
