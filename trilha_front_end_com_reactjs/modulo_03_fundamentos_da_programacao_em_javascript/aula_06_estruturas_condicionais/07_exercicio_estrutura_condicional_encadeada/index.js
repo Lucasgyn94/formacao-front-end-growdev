@@ -6,7 +6,7 @@ Questão. Crie um programa que calcule o desconto de um produto com base no valo
 - Se for maior que R$ 500, 20% de desconto;
 */
 
-const precoProduto = 10;
+const precoProduto = 1000;
 const descontoDezPorcento = ((precoProduto * 10) / 100);
 const descontoVintePorCento = ((precoProduto * 20) / 100);
 let precoFinal = 0;
