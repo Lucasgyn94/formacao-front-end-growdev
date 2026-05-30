@@ -6,6 +6,8 @@ const questao01 = () => {
 }
 
 // Questão 2: Peça ao usuário para inserir palavras. Continue pedindo até que o usuário digite a palavra "sair". Exiba cada palavra digitada.
+
+
 const questao02 = () => {
     let arrayPalavra = [];
     let palavra = "";
@@ -26,8 +28,6 @@ let palavra = "";
 do {
     palavra = prompt("Digite 'aceito' para confirmar a leitura dos termos!");
 
-    if (palavra === "aceito") {
-        console.log(`Você concordou com os termos com sucesso!`);
-    }
+} while (palavra !== "aceito");
 
-} while (palavra != "aceito");
+console.log(`Você concordou com os termos com sucesso!`);
