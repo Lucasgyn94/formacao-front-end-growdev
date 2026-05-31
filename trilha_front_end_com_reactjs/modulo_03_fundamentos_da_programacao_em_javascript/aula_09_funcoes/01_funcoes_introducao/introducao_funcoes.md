@@ -1,0 +1,1 @@
+* Bloco de código que pode ser definido uma vez e executado sempre que necessário. A função contém todos os passos necessários para realizar uma tarefa específica. Permite que escrevemos trechos de códigos que são reutilizáveis e fácil de entender. Após criar uma função, podemos chama-lá sempre que precisamos.
