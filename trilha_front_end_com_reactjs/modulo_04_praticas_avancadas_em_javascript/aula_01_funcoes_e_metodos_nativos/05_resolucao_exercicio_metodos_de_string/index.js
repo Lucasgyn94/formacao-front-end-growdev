@@ -45,9 +45,9 @@ const exercicio4 = () => {
 //exercicio4();
 
 // 5) Um usuário quer garantinr que sua mensagem de saudação termine com "!" no final. Ele já escreveu a saudação "Olá, como vai", mas quer adicionar um ponto de exclamação no final usando um método.
-
 const saudacao = "Olá, como vai";
 const saudacaoCompleta = saudacao.concat("!");
 console.log(saudacaoCompleta);
 
 exercicio5();
+
