@@ -19,7 +19,7 @@ let recados = [
         descricao: "Comparar JavaScript com Python",
         urgente: false
     },
-]
+];
 
 const exemploFind = () => {
     console.log("RECADOS");
