@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <h1>Exemplo Tipos de Eventos</h1>
+
+    <button id="clickButton">Clique aqui</button>
+    <br>
+    <br>
+    
+    <form id="meuForm">
+        <label for="name">Digite seu nome: </label>
+        <input type="text" id="name" onchange="handleChange(event)">
+
+        <label for="email">Digite seu email: </label>
+        <input type="email" id="email" onchange="handleChange(event)">
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <script src="./index.js" defer></script>
+</body>
+</html>

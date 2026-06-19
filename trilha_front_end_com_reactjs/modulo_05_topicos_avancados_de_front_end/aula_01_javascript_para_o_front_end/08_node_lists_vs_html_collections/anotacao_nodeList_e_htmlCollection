@@ -1,0 +1,10 @@
+# NodeList vs HTMLCollection
+
+## NodeList
+* Uma coleção de nós (que podem incluir elementos HTML, nós de texto e comentários). Podem ser estáticas ou dinâmicas, dependendo do método de seleção usado.
+* Pode ser iterado tanto pelo laço __for__ quanto __forEach__.
+
+## HTMLCollection
+* Uma coleção exclusiva de elementos HTML (ex: <div>, <p>, <a>). São sempre dinâmicas (também conhecidas como "vivas"), mudando automaticamente se o DOM for alterado.
+* Só pode ser iterado pelo laço __for__
+

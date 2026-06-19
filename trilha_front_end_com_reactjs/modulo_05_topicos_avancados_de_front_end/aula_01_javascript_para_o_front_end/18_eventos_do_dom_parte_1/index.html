@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Do DOM - Parte 1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="onPageLoad()">
+    <h1>Exemplo de Eventos JavaScript</h1>
+
+    <button id="btn-click">Clique Aqui</button>
+    
+    <br>
+    <br>
+
+    <!-- <form  id="meuForm" onsubmit="return onFormSubmit(event)"> -->
+    <form  id="meuForm" onsubmit="return onFormSubmit(event)">
+        <input id="inputForm" type="text" placeholder="Digite algo..." required>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div class="hover-box" id="hoverBox">
+        Passe o mouse aqui
+    </div>
+    <script src="./index.js" defer></script>
+</body>
+</html>
