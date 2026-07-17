@@ -1,0 +1,19 @@
+.h-80 {
+    height: 80px;
+}
+
+.div-black {
+    background-color: black;
+}
+
+.div-blue {
+    background-color: blue;
+}
+
+.div-green {
+    background-color: green;
+}
+
+.div-orange {
+    background-color: rgb(255, 115, 0);
+}
