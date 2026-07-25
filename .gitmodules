@@ -7,3 +7,6 @@
 [submodule "trilha_front_end_com_reactjs/modulo_02_fundamentos_do_desenvolvimento_front_end/aula_03_deploy/02-resolucao-exercicio-deploy/growtravel-vercel"]
 	path = trilha_front_end_com_reactjs/modulo_02_fundamentos_do_desenvolvimento_front_end/aula_03_deploy/02-resolucao-exercicio-deploy/growtravel-vercel
 	url = https://github.com/Lucasgyn94/growtravel-vercel.git
+[submodule "trilha_front_end_com_reactjs/modulo_06_projeto_full_stack_1_growflix/growflix"]
+	path = trilha_front_end_com_reactjs/modulo_06_projeto_full_stack_1_growflix/growflix
+	url = https://github.com/Lucasgyn94/growflix.git
