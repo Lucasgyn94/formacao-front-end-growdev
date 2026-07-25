@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/libs/bootstrap-5.3/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Bootstrap Components - Modal</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-3">
+                <h2>Exemplo Modal Sem JS</h2>            
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meuModal">
+                    Mostrar Modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal Título</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            
+                            <div class="modal-body">
+                                <img src="https://picsum.photos/200" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor nostrum nisi ipsam expedita reiciendis nihil tempore voluptatem ducimus? Ratione consequuntur impedit vitae nulla, commodi exercitationem dicta voluptatem libero adipisci?</p>
+                            </div>
+                            
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary">Salvar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mb-3">
+                <h2>Exemplo Modal Com JS</h2>            
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" id="myBtn" data-bs-dismiss="modal" aria-label="Close" >
+                    Mostrar Modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="meuModalJs" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal Título</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            
+                            <div class="modal-body">
+                                <img src="https://picsum.photos/200" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor nostrum nisi ipsam expedita reiciendis nihil tempore voluptatem ducimus? Ratione consequuntur impedit vitae nulla, commodi exercitationem dicta voluptatem libero adipisci?</p>
+                            </div>
+                            
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary">Fechar</button>
+                                <button type="button" class="btn btn-primary">Salvar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+    
+
+    <!--Scripts JS-->    
+    <script src="./assets/libs/bootstrap-5.3/bootstrap.bundle.min.js"></script>
+    <script src="./index.js" defer></script>
+</body>
+</html>

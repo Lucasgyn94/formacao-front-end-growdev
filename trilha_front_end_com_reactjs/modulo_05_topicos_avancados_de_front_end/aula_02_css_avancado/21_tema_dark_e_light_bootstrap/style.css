@@ -1,0 +1,9 @@
+.mode-dark {
+    background-color: rgb(10, 59, 124);
+    color: white;
+}
+
+.mode-dark:hover {
+    background-color: rgb(21, 78, 153);
+    color: white;
+}
