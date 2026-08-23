@@ -1,0 +1,12 @@
+{
+  "name": "exercio-pacotes-e-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/hello.js",
+  "scripts": {
+    "runHello": "node src/hello.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

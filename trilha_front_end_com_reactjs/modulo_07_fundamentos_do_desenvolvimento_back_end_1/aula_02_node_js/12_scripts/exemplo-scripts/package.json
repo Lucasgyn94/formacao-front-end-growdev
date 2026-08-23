@@ -1,0 +1,14 @@
+{
+  "name": "exemplo-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "hellow-corsay": "npx cowsay 'Olá Lucas'"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
