@@ -1,0 +1,62 @@
+import type { JSX } from 'react';
+import type { IPost } from '../../types';
+import { Avatar, Button, RoundedButton, StyledLink } from './styles';
+
+export function Post({
+    id,
+    author,
+    avatar,
+    category,
+    createdAt,
+    description,
+    image,
+    title = 'Post Sem título',
+    children,
+}: IPost): JSX.Element {
+    const hasExtraContent = false;
+
+    let likeCount = 0;
+
+    function handleLike(title: string) {
+        likeCount++;
+        alert(`Você curtiu o post: ${title}.\nCurtidas: ${likeCount}`);
+    }
+
+    return (
+        <article>
+            <img src={image} alt={title} />
+
+            <p>{category}</p>
+            <h2>
+                <StyledLink to={`posts/${id}`}>{title}</StyledLink>
+            </h2>
+
+            <div>
+                <Avatar src={avatar} alt="" />
+                <div>
+                    <span>{author}</span>
+                    <span>{createdAt}</span>
+                </div>
+            </div>
+            <p>{description}</p>
+            {children}
+
+            {hasExtraContent ? (
+                <button>Leia mais</button>
+            ) : (
+                <p>Nenhum conteúdo disponível.</p>
+            )}
+
+            <Button
+                onClick={() => {
+                    handleLike(title);
+                }}
+            >
+                Curtir
+            </Button>
+            <RoundedButton primary as="a">
+                Compartilhar
+            </RoundedButton>
+        </article>
+    );
+}
