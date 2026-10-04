@@ -11,7 +11,6 @@ export const Container = styled.div`
     gap: 10px;
     /* width: 100%; */
     width: min(100%, 600px);
-    
     /* max-width: 60px;
     padding: 0 15px; */
 
