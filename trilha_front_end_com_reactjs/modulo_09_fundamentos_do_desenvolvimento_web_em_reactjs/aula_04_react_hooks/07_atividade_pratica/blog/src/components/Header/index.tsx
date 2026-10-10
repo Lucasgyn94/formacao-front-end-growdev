@@ -2,11 +2,9 @@ import type { JSX } from 'react';
 import { Container, Title, Logo, HeaderWrapper } from './styles';
 
 import logo from '../../assets/logo.png';
-import { useTheme } from '../../hooks/useTheme';
+import { ToggleThemeButton } from '../ToggleThemeButton';
 
 export function Header(): JSX.Element {
-
-    const { toggleTheme } = useTheme();
 
     const isUserLoggedIn: boolean = false;
     let message;
@@ -24,7 +22,8 @@ export function Header(): JSX.Element {
                     {message}
                 </div>
                 <Logo src={logo} />
-                <button onClick={toggleTheme} type="button">Alternar Tema</button>
+                <ToggleThemeButton />
+                
             </Container>
         </HeaderWrapper>
     );
