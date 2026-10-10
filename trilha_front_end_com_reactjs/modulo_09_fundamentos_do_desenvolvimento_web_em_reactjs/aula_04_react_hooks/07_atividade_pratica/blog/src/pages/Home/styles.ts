@@ -33,6 +33,7 @@ export const Container = styled.div`
         font-size: 1rem;
         cursor: pointer;
         background-color: ${({ theme }) => theme.colors.primary};
+        font-weight: bold;
 
         &:hover {
             filter: brightness(0.95);
