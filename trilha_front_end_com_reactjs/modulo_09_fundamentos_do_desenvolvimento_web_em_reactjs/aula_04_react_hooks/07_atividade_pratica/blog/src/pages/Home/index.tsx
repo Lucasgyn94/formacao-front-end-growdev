@@ -1,4 +1,4 @@
-import type { ChangeEvent, FormEvent } from 'react';
+import { useState, type ChangeEvent, type FormEvent } from 'react';
 import { posts } from '../../posts';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
@@ -6,22 +6,28 @@ import { PostsList } from '../../components/PostsList';
 import { Container, FormWrapper } from './styles';
 
 export function Home() {
-    let filterText = '';
+    // let filterText = '';
+    const [filterText, setFilterText] = useState('');
+    const [filteredPosts, setFilteredPosts] = useState(posts);
 
     function handleFilterChange(event: ChangeEvent<HTMLInputElement>) {
-        filterText = event.target.value.toLowerCase();
-
-        console.log(`Texto do filtro: ${filterText}`);
+        // filterText = event.target.value.toLowerCase();
+        // console.log(`Texto do filtro: ${filterText}`);
+        setFilterText(event.target.value);
     }
 
     function handleFormSubmit(event: FormEvent) {
         event.preventDefault();
 
-        const filteredPosts = posts.filter((post) =>
-            post.title.toLowerCase().includes(filterText),
-        );
+        // const filteredPosts = posts.filter((post) =>
+        //     post.title.toLowerCase().includes(filterText),
+        // );
 
-        console.log(`Posts filtrados: `, filteredPosts);
+        // console.log(`Posts filtrados: `, filteredPosts);
+        const filtered = posts.filter((post) =>
+            post.title?.toLowerCase().includes(filterText.toLowerCase()),
+        );
+        setFilteredPosts(filtered);
     }
 
     return (
@@ -40,7 +46,7 @@ export function Home() {
             </FormWrapper>
 
             <main>
-                <PostsList posts={posts} />
+                <PostsList posts={filteredPosts} />
             </main>
 
             <Footer />
