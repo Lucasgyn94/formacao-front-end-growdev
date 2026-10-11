@@ -5,7 +5,6 @@ import logo from '../../assets/logo.png';
 import { ToggleThemeButton } from '../ToggleThemeButton';
 
 export function Header(): JSX.Element {
-
     const isUserLoggedIn: boolean = false;
     let message;
 
@@ -23,7 +22,6 @@ export function Header(): JSX.Element {
                 </div>
                 <Logo src={logo} />
                 <ToggleThemeButton />
-                
             </Container>
         </HeaderWrapper>
     );

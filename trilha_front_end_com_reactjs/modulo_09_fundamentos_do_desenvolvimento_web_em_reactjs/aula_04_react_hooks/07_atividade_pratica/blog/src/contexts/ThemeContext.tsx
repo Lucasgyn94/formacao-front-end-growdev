@@ -1,6 +1,6 @@
-import { createContext, useState, type ReactNode } from "react";
-import { ThemeProvider } from "styled-components";
-import themes from "../themes";
+import { createContext, useState, type ReactNode } from 'react';
+import { ThemeProvider } from 'styled-components';
+import themes from '../themes';
 
 interface IThemeContext {
     theme: 'light' | 'dark';
@@ -13,7 +13,7 @@ interface ThemeProviderProps {
 
 export const ThemeContext = createContext<IThemeContext | undefined>(undefined);
 
-export function ThemeProviderComponent({children}: ThemeProviderProps) {
+export function ThemeProviderComponent({ children }: ThemeProviderProps) {
     const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
     function toggleTheme() {
