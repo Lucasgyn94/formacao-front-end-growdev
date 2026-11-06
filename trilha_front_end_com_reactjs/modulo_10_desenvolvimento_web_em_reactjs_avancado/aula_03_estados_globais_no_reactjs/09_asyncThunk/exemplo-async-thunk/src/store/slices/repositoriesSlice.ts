@@ -9,12 +9,14 @@ interface Repository {
 
 interface RepositoryState {
     repositories: Repository[],
-    loading: boolean
+    loading: boolean,
+    error: string | null
 }
 
 const initialState: RepositoryState = {
     repositories: [],
-    loading: false
+    loading: false,
+    error: null
 }
 
 export const fetchRepositories = createAsyncThunk('repositories/fetchRepositories', async (username: string, config) => {
@@ -32,13 +34,16 @@ const repositoriesSlice = createSlice({
     extraReducers: (builder) => {
         builder.addCase(fetchRepositories.pending, (state) => {
             state.loading = true;
+            state.error = null;
         });
         builder.addCase(fetchRepositories.fulfilled, (state, action) => {
             state.loading = false;
             state.repositories = action.payload;
         });
-        builder.addCase(fetchRepositories.rejected, (state) => {
+        builder.addCase(fetchRepositories.rejected, (state, action) => {
             state.loading = false;
+            state.error = action.error.message || 'Erro ao buscar repositórios';
+            state.repositories = [];
         });
     }
 });

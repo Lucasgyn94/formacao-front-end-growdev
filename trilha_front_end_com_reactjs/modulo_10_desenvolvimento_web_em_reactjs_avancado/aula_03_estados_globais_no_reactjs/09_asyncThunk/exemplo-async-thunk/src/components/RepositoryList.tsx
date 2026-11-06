@@ -5,12 +5,19 @@ import { fetchRepositories } from "../store/slices/repositoriesSlice";
 export function RepositoryList() {
     const dispatch = useAppDispatch();
 
-    const { repositories, loading } = useAppSelector(state => state.repositories);
+    const { repositories, loading, error } = useAppSelector(state => state.repositories);
 
     const [username, setUsername] = useState('');
+
+    const [hasSearched, setHasSearched] = useState(false);
     
     function handleSearch() {
-        dispatch(fetchRepositories(username));
+        if (!username.trim()) {
+            return;
+        }
+
+        setHasSearched(true);
+        dispatch(fetchRepositories(username.trim()));
     }
 
 
@@ -27,6 +34,13 @@ export function RepositoryList() {
             <button onClick={handleSearch}>Buscar</button>
 
             {loading && <p>Carregando...</p>}
+
+            {error && <p>{error}</p>}
+
+
+            {hasSearched && !loading && !error && repositories.length === 0 && (
+                <p>Nenhum repositório público encontrado.</p>
+            )}
 
             <ul>
                 {repositories.map((repository) => (
