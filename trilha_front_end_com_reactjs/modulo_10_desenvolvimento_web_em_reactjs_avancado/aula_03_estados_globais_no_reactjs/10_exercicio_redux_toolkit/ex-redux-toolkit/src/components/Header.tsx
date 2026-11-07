@@ -1,4 +1,4 @@
-import { AppBar, CssBaseline, IconButton, Toolbar, Typography } from "@mui/material";
+import { AppBar, IconButton, Toolbar, Typography } from "@mui/material";
 import ToggleThemeIcon from '@mui/icons-material/Brightness4'
 import { useAppDispatch } from "../store/hooks";
 import { toggleTheme } from "../store/slices/themeSlice";
@@ -17,8 +17,6 @@ export function Header() {
                 marginBottom: "1rem" 
             }}
         >
-            <CssBaseline />
-
             <Toolbar>
                 <Typography
                     variant="h6"
